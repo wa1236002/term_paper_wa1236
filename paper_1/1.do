@@ -3,7 +3,7 @@ clear
 cls
 * 数据准备与重命名
 graph set window fontface "SimSun"
-import excel "C:\Users\lenovo\Desktop\stata_ready.xlsx", sheet("Sheet1") firstrow
+import excel "C:\Users\lenovo\Desktop\data.xlsx", sheet("Sheet1") firstrow
 describe
 encode 地区, gen(province_id)
 xtset province_id 年份
